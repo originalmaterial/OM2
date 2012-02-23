@@ -1,0 +1,32 @@
+body
+	{
+		background-color:gray;
+		height:100%;
+		width:100%;
+	}
+#nav
+{
+	width:90%;
+	height:5%;
+	background-color:white;
+	color:white;
+	position:absolute;
+	top:0;
+	left:5%;
+}
+
+#image
+{
+	width:90%;
+	height:90%;
+	background-color:white;
+	position:absolute;
+	display: block;
+	top:7%;
+	left:5%;
+}
+
+img
+{
+	max-width:100%;
+}

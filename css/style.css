@@ -1,0 +1,108 @@
+body {
+	overflow:hidden; 
+	padding:0;margin:0;
+	height:100%;width:100%;
+}
+ 
+#bgimg {
+	position:absolute;
+	z-index: -1;
+}
+ 
+#realBody{
+	position:absolute;
+	z-index: 5;	
+	overflow:auto; 
+	height:100%;width:100%;
+}
+
+#container {
+	width: 400px;
+	height: 267px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	margin:-133.5px 0 0 -200px;
+	padding-top: 10px;
+	background:rgba(0,0,0,.9);
+	color: white;
+
+}
+
+#container h1 {
+	vertical-align: middle;
+	margin-top: 100px;
+	font-family:"Gotham-Medium";
+	text-align: center;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+
+#container h2 {
+	margin-top:-12px;
+	font-family:"Gotham-Medium";
+	font-size:12px;
+	text-align: center;
+	text-transform:uppercase;	
+	letter-spacing:5px;
+}
+
+.bottom_switch, .bottom_switch a{
+	margin-top:90px;
+	font-size:11px;
+	font-family:"Gotham-Light";
+	text-transform:uppercase;
+	text-align: center;
+	text-decoration:none;
+	color:white;
+	letter-spacing:3px;
+	position: relative;
+}
+
+/*test*/
+a:hover{
+	color:#dadada;
+}
+
+#hidden{
+	position:absolute;
+	top:bottom;
+	width:400px;
+	z-index:-2;
+}
+
+#contact, #portfolio, #projects
+{
+	font-size:11px;
+	color:white;
+	font-family:"Gotham-Light";
+	text-align: center;
+	letter-spacing:2px;
+	line-height:13px;
+	background:black;
+	padding-top:10px;
+	padding-bottom:10px;
+	width:400px;
+	position: absolute;
+	top:0;
+	z-index:-1;
+	opacity:0;
+	text-decoration:none;
+	overflow: visible;
+}
+
+a
+{
+	color:white;
+	text-decoration:none;
+}
+
+#footer
+{
+	font-family:"Menlo", Courier;
+	color:white;
+	font-size:8px;
+	position:absolute;
+	bottom:0.5%;
+	right:1%;
+}
