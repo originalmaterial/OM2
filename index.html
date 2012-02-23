@@ -38,6 +38,12 @@
 			}
 		}
 
+		function move(e){
+			var topOffset = $("#container").offset().top;
+			var y = topOffset + 1.35 * $("#container").outerHeight();
+			$("#container").animate({marginTop:-y},400,"linear");
+		}
+
 	  	function randomImage(){
            var path =  'images/';
            var myImages =  ['1.jpg', '2.jpg', '3.jpg'];
@@ -66,11 +72,11 @@
 			
 			<div id="hidden">
 			<div id="portfolio">
-				Portraits<br>Scenes<br>WIP
+				Portraits<br>Scenes<br><a href="#" onclick="move('#WIP')">WIP</a>
 			</div>
 			
 			<div id="projects">
-				Tables (2009 - Present)<br>Lines
+				Tables (2009 - Present)<br>Lines (2009 - Present)<br>-<br><a href="http://scrapbook.originalmaterial.ch" target="_blank">Blog</a>
 			</div>
 			
 			<div id="contact">
