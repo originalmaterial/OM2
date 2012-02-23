@@ -38,10 +38,16 @@
 			}
 		}
 
-		function move(e){
+		function display(e){
+			if($("#backstretch").offset().top){
+				var bgheight = 0;
+			} else{
+				var bgheight = $("#backstretch").height();
+			}
 			var topOffset = $("#container").offset().top;
 			var y = topOffset + 1.35 * $("#container").outerHeight();
 			$("#container").animate({marginTop:-y},400,"linear");
+			$("#backstretch").animate({marginTop:-bgheight},600,"linear");
 		}
 
 	  	function randomImage(){
@@ -72,7 +78,7 @@
 			
 			<div id="hidden">
 			<div id="portfolio">
-				Portraits<br>Scenes<br><a href="#" onclick="move('#WIP')">WIP</a>
+				Portraits<br>Scenes<br><a href="#" onclick="display('#WIP')">WIP</a>
 			</div>
 			
 			<div id="projects">
@@ -92,7 +98,7 @@
 					document.write('&#111;&#114;&#105;&#103;&#105;&#110;&#97;&#108;&#109;&#97;&#116;&#101;&#114;&#105;&#97;&#108;&#46;&#99;&#104;<\/a>');
 					// -->
 				</script><noscript>&#115;&#99;&#111;&#116;&#116; at 
-				&#111;&#114;&#105;&#103;&#105;&#110;&#97;&#108;&#109;&#97;&#116;&#101;&#114;&#105;&#97;&#108; dot &#99;&#104;</noscript><br>+852 6097 3477<br>-<br>Hong Kong
+				&#111;&#114;&#105;&#103;&#105;&#110;&#97;&#108;&#109;&#97;&#116;&#101;&#114;&#105;&#97;&#108; dot &#99;&#104;</noscript><br><a href="tel:+85260973477">+852 6097 3477</a><br>-<br>Hong Kong
 			</div>
 		</div>
 		</div>
